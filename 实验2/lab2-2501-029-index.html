@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数字展销平台</title>
+    <style>
+        *{margin: 0px; padding: 0px;}
+        .total{width: 1100px; height: 1682px; border: 2px solid rgb(14, 14, 5); margin: auto; background-color: rgb(126, 151, 225);}
+        .top li{float: left; list-style: none;width: 150px;height: 50px; text-align: center;line-height: 50px;}
+        .logo{float: left;}
+        .top ul{width: 1100px; height: 50px; padding-left: 50px;}
+        .clear{clear: both;}
+        .top{position: fixed; width: 1100px; background-color: rgb(126, 151, 225); z-index: 100;}
+        .left{width: 200px; margin-top: 50px;}
+        .mid{width:600px; height: 600px; margin-top: 50px;}
+        .left,.mid,.right{float: left;}
+        .left ul{width: 200px; height: 600px; margin-top: 0px; padding-left: 0px ; background-color: rgb(153, 186, 233); overflow: hidden;}
+        .left li{list-style: none; width: 100px; height: 60px; text-align: center; line-height: 60px; margin: auto;}
+        .top a:hover{cursor: pointer;}
+        .left li:hover{cursor: pointer;}
+        .top a{text-decoration: none; }
+        .logo{background-image: url("img/鲁东大学校徽.jpeg"); background-size: contain;width: 50px; height: 50px; display: inline-block;margin-left: 30px;}
+        li:hover{background-color: aqua;}
+        .view1{width: 600px; height: 350px;}
+        .photos{width: 600px; height: 600px;}
+        .view2,.view3,.view4{float: left;position: relative;}
+        .view4,.view5,.view6{float: left;position: relative;}
+        .right{ width: 300px; position: fixed; top: 50px; margin-left: 800px;}
+        .view2{position: relative; z-index: 1;}
+        .content{width: 150px; height: 120px; position: absolute; left: 150px; top: 20px; background-color: white; opacity: 0.7; display: none;}
+        .view2:hover .content{display: block; }
+        table{width: 600px; height: 130px; border: 1px solid black; border-collapse: collapse;}
+        td,th{border: 1px solid #000;}
+        .apple{font-size: 40px;}
+    </style>
+</head>
+<body>
+    <div class="total">
+        <div class="top">
+            <ul>
+                <div class="logo"></div>
+                <li><a href="https://www.dushu.com/" target="_blank">图书</a></li>
+                <li><a href="https://www.cfsn.cn/" target="_blank">食品</a></li>
+                <li><a href="https://uland.taobao.com/sem/tbsearch?clk1=7712ffcfb85895d2f35180d858700174&keyword=%E5%B8%B8%E7%94%A8%E7%94%B5%E5%AD%90%E8%AE%BE%E5%A4%87&localImgKey=&msclkid=6af4ac1deaba11f2f4e2c5fd08076128&page=1&q=%E5%B8%B8%E7%94%A8%E7%94%B5%E5%AD%90%E8%AE%BE%E5%A4%87&refpid=mm_2898300158_3078300397_115665800437&tab=all&upsId=7712ffcfb85895d2f35180d858700174" target="_blank">电子产品</a></li>
+                <li><a href="https://uland.taobao.com/sem/tbsearch?clk1=2bff90ad648236acca26e418d0078615&keyword=%E5%93%81%E7%89%8C%E5%8C%96%E5%A6%86%E5%93%81&localImgKey=&msclkid=44fcd6f360c01845dbe2bf13823fcc04&page=1&q=%E5%93%81%E7%89%8C%E5%8C%96%E5%A6%86%E5%93%81&refpid=mm_2898300158_3078300397_115665800437&tab=all&upsId=2bff90ad648236acca26e418d0078615" target="_blank">美妆</a></li>
+                <li><a href="https://www.yaoyaoyou.biz/" target="_blank">医药</a></li>
+                <li><a href="https://www.taobao.com/markets/cun/gyct" target="_blank">助农</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <div class="left">
+            <ul>
+                <li>文学小说</li>
+                <li>历史传记</li>
+                <li>社会科学</li>    
+                <li>自然科学</li>
+                <li>少儿读物</li>    
+                <li>艺术设计</li>
+                <li>经济管理</li>
+                <li>教育考试</li>
+                <li>生活健康</li>
+                <li>哲学宗教</li>
+            </ul>
+        </div>
+        <div class="mid">
+            <div class="photos">
+                <div class="view2">
+                    <img src="img/2.webp" width="200px" height="200px">
+                    <div class="content">
+                        <p>吴承恩所作神魔小说，讲述唐僧师徒四人西天取经，历经九九八十一难，终成正果的故事。</p>
+                    </div>
+                </div>
+                <div class="view3"><img src="img/3.jpg" width="200px" height="200px"></div>
+                <div class="view4"><img src="img/4.jpg" width="200px" height="200px"></div>
+                <div class="clear"></div>
+                <div class="view5"><img src="img/5.jpg" width="200px" height="200px"></div>
+                <div class="view6"><img src="img/6.jpg" width="200px" height="200px"></div>
+                <div class="view7"><img src="img/7.jpg" width="200px" height="200px"></div>
+                <p class="apple">新书上市</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>书名</th>
+                            <th>作者</th>
+                            <th>价格</th>
+                            <th>类型</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>下一个五年：中国的战略选择与行动方案</td>
+                            <td>郑永年</td>
+                            <td>98.00 元</td>
+                            <td>时政 / 战略</td>
+                        </tr>
+                        <tr>
+                            <td>寻求承认：大国政治中的 “地位” 问题</td>
+                            <td>王梓元</td>
+                            <td>88.00 元</td>
+                            <td>国际关系 / 政治</td>
+                        </tr>
+                        <tr>
+                            <td>养龙虾：OpenClaw 与 AI 智能体时代</td>
+                            <td>杜雨</td>
+                            <td>79.00 元</td>
+                            <td>AI / 科技 / 趋势</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="right">
+            <div class="cheap">
+                <table>
+                    <div class="view8"><img src="img/8.webp" width="300px" height="300px"></div>
+                    <div class="view9"><img src="img/9.jpg" width="300px" height="300px"></div>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+        *{margin: 0px; padding: 0px;}
+        .total{width: 1100px; height: 1682px; border: 2px solid rgb(14, 14, 5); margin: auto; background-color: rgb(126, 151, 225);}
+        .top li{float: left; list-style: none;width: 150px;height: 50px; text-align: center;line-height: 50px;}
+        .logo{float: left;}
+        .top ul{width: 1100px; height: 50px; padding-left: 0px;}
+        .clear{clear: both;}
+        .top{position: fixed; width: 1100px; background-color: rgb(126, 151, 225); z-index: 100;}
+        .left{width: 200px; margin-top: 50px;}
+        .mid{width:600px; height: 600px; margin-top: 50px;}
+        .left,.mid,.right{float: left;}
+        .left ul{width: 200px; height: 600px; margin-top: 0px; padding-left: 0px ; background-color: rgb(153, 186, 233); overflow: hidden;}
+        .left li{list-style: none; width: 100px; height: 60px; text-align: center; line-height: 60px; margin: auto;}
+        .top a:hover{cursor: pointer;}
+        .left li:hover{cursor: pointer;}
+        .top a{text-decoration: none; }
+        .logo{background-image: url("../img/鲁东大学校徽.jpeg"); background-size: contain;width: 50px; height: 50px; display: inline-block;margin-left: 30px;}
+        li:hover{background-color: aqua;}
+        .view1{width: 600px; height: 350px;}
+        .photos{width: 600px; height: 600px;}
+        .view2,.view3,.view4{float: left;position: relative;}
+        .view4,.view5,.view6{float: left;position: relative;}
+        .right{ width: 300px; position: fixed; top: 50px; margin-left: 800px;}
+        .view2{position: relative; z-index: 1;}
+        .content{width: 150px; height: 120px; position: absolute; left: 150px; top: 20px; background-color: white; opacity: 0.7; display: none;}
+        .view2:hover .content{display: block; }
+        table{width: 600px; height: 130px; border: 1px solid black; border-collapse: collapse;}
+        td,th{border: 1px solid #000;}
+        .apple{font-size: 40px;}
+        .login{width: 50px; height: 50px; margin-left: 1000px; text-align: center; position: relative;}
+        .in{line-height: 50px;}
+        .form{display: none; position: absolute; top: 50px; right: 350px; border: 1px solid black; width: 400px; height: 405px; background-color: aliceblue;}
+        .pass{width: 400px; margin-left: 50px;}
+        .mod input{border: none; width: 300px; height: 50px; margin-top: 20px;}
+        .register{margin-left: 40px;}
+        .but input{border: none; width: 280px; height: 40px;cursor: pointer;}
+        .pass>li:first-child a{font-weight: 700;}
+        .footer ul{width: 400px;}
+        .footer li{width: 80px;}
+        .cartoon{width: 800px; height: 400px; overflow: hidden;}
+        .cartoon li,.cartoon img{width: 800px; height: 400px;}
+        .cartoon li{position: relative; animation: summer 24s ease 1s infinite alternate;}
+        span{width: 20px; height: 20px; line-height: 20px; text-align: center; font-size: 18px; color: rgb(228, 15, 15);display: inline-block; border: 1px solid white; border-radius: 50%; position: absolute; right: 70px; bottom: 20px;}
+        @keyframes summer
+        {
+            0%{top: 0;}
+            20%{top: -400px;}
+            45%{top: -800px;}
+            60%{top: -1200px;}
+            80%{top: -1600px;}
+            100%{top: -2000px;}
+
+        }
+        .mid img:hover{box-shadow: 0 0 10px 10px black; transform: translateX(20px) scale(1.1); }
+        a.in{display: inline-block; text-align: center; width: 50px;}
+        a.in:hover{background-image: linear-gradient(red, blue); transform: scale(1.1);}
+        .serch img{border-radius: 50%;}
+        .shopping img{border-radius: 50%;}
+        .serch,.shopping{float: left;}
+        .shopping{margin-left: 100px;}
+        .serch:hover,.shopping:hover{transform: rotate(90deg);}
+        .right p{float: left; font-size: 30px;}
+        .car{margin-left: 140px;}
